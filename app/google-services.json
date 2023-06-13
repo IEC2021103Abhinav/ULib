@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "954604474602",
+    "project_id": "ulib-dd4e1",
+    "storage_bucket": "ulib-dd4e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954604474602:android:3b76bc264e73f12a408793",
+        "android_client_info": {
+          "package_name": "com.example.ulib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954604474602-jsl9nr0753pgvmghgt6kp90ap7k192qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ulib",
+            "certificate_hash": "1103ee3191d2294434b8136afbe43b4a4beff84e"
+          }
+        },
+        {
+          "client_id": "954604474602-isv5830do1opg01dmn1nnff0dmijt72p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA68DWmpticRXl2KTXM93UDdH9RhJAX0gY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954604474602-isv5830do1opg01dmn1nnff0dmijt72p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

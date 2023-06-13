@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PdfEditActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_up"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_image"
+            android:layout_width="37dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/dark_back"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="39dp"
+            android:src="@drawable/read" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/edit_book_info"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/book_title_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/back_ground_color"
+        android:drawableStart="@drawable/baseline_picture_as_pdf_24"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="Book Title"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="@color/back_ground_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_up" />
+
+    <EditText
+        android:id="@+id/book_des_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/back_ground_color"
+        android:drawableStart="@drawable/baseline_picture_as_pdf_24"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="Book Description"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minHeight="48dp"
+        android:textColorHint="@color/back_ground_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/book_title_edt" />
+    <TextView
+        android:id="@+id/book_cat_tv"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_edittext01"
+        app:drawableStartCompat="@drawable/baseline_category_24"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_down_24"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:hint="@string/book_category"
+        android:ems="10"
+        android:textColorHint="@color/back_ground_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/book_des_edt"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateButton"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/shape_btn01"
+        android:backgroundTint="@color/back_ground_color"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView4"
+        android:layout_width="421dp"
+        android:layout_height="177dp"
+        android:orientation="vertical"
+        android:scaleType="fitEnd"
+        android:src="@drawable/wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/wave"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/book"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/book"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ULib"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PdfDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PdfEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PdfListAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CategoryAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/Theme.ULib" />
+        <activity
+            android:name=".activities.DashBoardUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DashboardAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

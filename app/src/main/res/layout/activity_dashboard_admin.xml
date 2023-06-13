@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DashboardAdminActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar_up"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_person_24"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tittle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/dashboard_admin"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:ignore="RelativeOverlap" />
+        <TextView
+            android:id="@+id/sub_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tittle_tv"
+            android:text="@string/abc_gmail_com"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/power_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_power_settings_new_24"
+            tools:ignore="ContentDescription"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_up"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:hint="@string/search"
+        android:padding="10dp"
+        android:textColorHint="@color/back_ground_color"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categories_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_categories" />
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn01"
+            android:minHeight="50dp"
+            android:textAllCaps="false"
+            android:text="@string/add_category"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/category_added"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/addPdfFab"
+            android:backgroundTint="@color/back_ground_color"
+            app:fabCustomSize="50dp"
+            android:src="@drawable/baseline_picture_as_pdf_24"
+            android:tint="@color/white"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="@drawable/shape_rect_02">
+<androidx.appcompat.widget.AppCompatImageButton
+    android:id="@+id/backBtn01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_arrow_back_black"
+    android:background="@android:color/transparent"
+    android:padding="5dp"/>
+    <TextView
+        android:id="@+id/titleTv01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="5dp"
+        android:text="Add Comment"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_back"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/commentTl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backBtn01"
+        android:layout_marginTop="20dp"
+        android:hint="Comment"
+        app:startIconDrawable="@drawable/baseline_comment_black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/commentEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext01"
+            android:inputType="textMultiLine|textCapSentences"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentTl"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:background="@drawable/shape_btn01"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

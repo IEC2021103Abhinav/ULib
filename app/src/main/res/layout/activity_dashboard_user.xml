@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DashBoardUserActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar_up"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/shape_toolbar02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_person_24"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/power_img"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_power_settings_new_24" />
+
+        <TextView
+            android:id="@+id/tittle_tv"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Dashboard User"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/sub_title_tv"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="35dp"
+            android:text="abc@gmail.com"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+<!--    Tabs : Show Book Categories-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_up"
+        android:layout_margin="5dp"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        />
+<!--    View Pager : Show categorized books in fragment-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
