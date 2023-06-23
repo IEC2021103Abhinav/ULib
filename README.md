@@ -41,33 +41,33 @@ For Users in my app
 ##ScreenShots
 #Here, are the splash screen,home screen, and registration screen of the app.
 <p align="left">
-<img src="./assets/splash.jpeg" width="250" height="400">
-<img src="./assets/home.jpeg" width="250" height="400">
-<img src="./assets/registration.jpeg" width="250" height="400">
+<img src="./assets/splash.jpeg" width="250" height="450">
+<img src="./assets/home.jpeg" width="250" height="450">
+<img src="./assets/registration.jpeg" width="250" height="450">
 </p>
 #Here, are the login Screen, and forgot the password of the app.
 <p align="center">
-<img src="./assets/login.jpeg" width="250" height="400">
-<img src="./assets/forgot.jpeg" width="250" height="400">
+<img src="./assets/login.jpeg" width="250" height="450">
+<img src="./assets/forgot.jpeg" width="250" height="450">
 </p>
 #Here, are the dashboardUser, and dashboardAdmin the password of the app, which contain all the different categories and search option.
 <p align="center">
-<img src="./assets/login.jpeg" width="250" height="400">
-<img src="./assets/forgot.jpeg" width="250" height="400">
+<img src="./assets/login.jpeg" width="250" height="450">
+<img src="./assets/forgot.jpeg" width="250" height="450">
 </p>
 #Here,Admin have many features like adding new category, uploading new book , deleting books,category.
 <p align="center">
-<img src="./assets/newCategory.jpeg" width="250" height="400">
-<img src="./assets/editCategory.jpeg" width="250" height="400">
+<img src="./assets/newCategory.jpeg" width="250" height="450">
+<img src="./assets/editCategory.jpeg" width="250" height="450">
 </p>
 #Here ,User have also may features like add to favourite ,comment on the books, read the book and download .
 <p align="center">
-<img src="./assets/favourite.jpeg" width="250" height="400">
-<img src="./assets/comment.jpeg" width="250" height="400">
+<img src="./assets/favourite.jpeg" width="250" height="450">
+<img src="./assets/comment.jpeg" width="250" height="450">
 </p>
 #In this user have also an option to edit your profile and it contains all the info about favourite books , email verified ,email and other things also.
 <p align="center">
-<img src="./assets/profile.jpeg" width="250" height="400">
+<img src="./assets/profile.jpeg" width="250" height="450">
 </p>
 
 ## Color Reference
